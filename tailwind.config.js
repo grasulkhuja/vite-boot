@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        chinese: [
+        "chinese": [
           "Helvetica Neue",
           "Helvetica",
           "Arial",
@@ -14,8 +14,8 @@ module.exports = {
           "WenQuanYi Micro Hei",
           "sans-serif",
         ],
-        //黑体
-        blackFont: [
+        // 黑体
+        "helvetica": [
           "-apple-system",
           "Noto Sans",
           "Helvetica Neue",
@@ -36,8 +36,8 @@ module.exports = {
           "WenQuanYi Zen Hei Sharp",
           "sans-serif",
         ],
-        //楷体
-        kai: [
+        // 楷体
+        "italics": [
           "Baskerville",
           "Georgia",
           "Liberation Serif",
@@ -54,8 +54,8 @@ module.exports = {
           "TW-Kai",
           "serif",
         ],
-        //宋体
-        song: [
+        // 宋体
+        "song": [
           "Georgia",
           "Nimbus Roman No9 L",
           "Songti SC",
@@ -77,8 +77,8 @@ module.exports = {
           "MingLiU",
           "serif",
         ],
-        //仿宋体
-        "fang-song": [
+        // 仿宋体
+        "imitation-song": [
           "Baskerville",
           "Times New Roman",
           "Liberation Serif",

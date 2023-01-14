@@ -1,10 +1,11 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import type { RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import NProgress from "nprogress";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    redirect: "/home",
+    component: () => import("~/views/home/index.vue"),
   },
   {
     path: "/404",
@@ -36,13 +37,13 @@ const index = createRouter({
   history: createWebHistory(),
   routes,
 });
-index.beforeEach((to, from) => {
+index.beforeEach(() => {
   if (!NProgress.isStarted()) {
     NProgress.start();
   }
 });
 
-index.afterEach((to, from) => {
+index.afterEach(() => {
   NProgress.done();
 });
 
